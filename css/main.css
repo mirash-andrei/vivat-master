@@ -118,6 +118,7 @@ header p{
 .btn-header{
 	background: #970e52;
     font-family: "Geometria-Bold";
+    color: #fff!important;
     line-height: 1;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -164,6 +165,10 @@ header .dropdown-menu .dropdown-item:hover span{
     color: #59052b;
     font-size: 20px;
     bottom: 23%;
+}
+.affiliate_program{
+    padding-left: 2px;
+    padding-right: 2px;
 }
 /*head*/
 section.head{
@@ -226,6 +231,7 @@ section.head .fa-search{
 }
 .reg_icon{
 	position: relative;
+	-webkit-appearance: none!important;
 }
 .reg_icon:hover .pading_registration{
 	display: block;
@@ -343,7 +349,8 @@ section.head .fly.fly_scroll .catalog_opdata a{
 .viva-menu .item_menu{
 	padding-top: 1.2rem;
 	border-bottom: 2px dashed;
-    border-color: #951555;
+    border-color: #761144;
+    font-family: "Geometria-Bold";
 }
 .viva-menu .item_menu a:hover{
 	color: #fd22b5;
@@ -659,16 +666,98 @@ footer .btn-header{
     padding: 0;
 }
 /*modal*/
-.modal.fade.show{
-    padding-right: 0!important;
+.modal-content{
+	border-radius: 0;
 }
-.modal.show .modal-dialog{
-    max-width: 100%;
+.close {
+    font-size: 2.5rem;
+    opacity: 1;
+    padding: 0!important;
+    margin: 0!important;
+}
+/*modal_reg*/
+.modal_reg .modal-header{
+    align-items: center;
+    justify-content: space-between;
+	padding: 0 1rem 0 0;
+	background: #dcdcdc;
+    border-bottom: none;
+}
+.modal_reg .modal-header .nav-link{
+    color: #000;
+    font-family: "Geometria-Bold";
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+
+}
+.modal_reg .nav-pills .nav-link.active{
+    background: #fff;
+    color: #000;
+    border-radius: 0;
+}
+.modal_reg .form-check-label{
+    padding-left: 20px;
+}
+.modal_reg .form-check-input{
+    margin-left: 0;
+    margin-top: .4rem;
+}
+.modal_reg .login,.modal_reg .forgot_password{
+    text-align: center;
+}
+.modal_reg .forgot_password{
+   padding-bottom: 58px;
+}
+.modal_reg .login{
+    margin: 30px 0;
+}
+.modal_reg .link_top{
+    color: #000;
+}
+.modal_reg .link_top:hover{
+    color: #970e52;
+}
+.modal_reg .modal-body{
+    padding-top: 58px;
+}
+.modal_reg .search{
+    margin-bottom: 10px;
+}
+.modal_reg .search.pasword{
+    margin-bottom: 16px;
+}
+.modal_reg .btn-header{
+    padding: 9px 42px;
+}
+.name_input p{
+    color: #000;
     margin: 0;
 }
-.modal-content{
-    height: 100vh;
-    border-radius: 0;
+.field_for_registration{
+    margin-bottom: 10px;
+}
+.field_for_registration .search{
+    margin: 0;
+}
+.field_for_registration .btn-header{
+    padding: 9px 24px;
+}
+.little_font p{
+    color: #dcdcdc;
+    font-size: 12px;
+}
+/*back_call*/
+.back_call .modal-header{
+    background: #fff;
+    text-align: center;
+}
+.back_call .modal-header h5{
+    margin: 0;
+    width: 100%;
+    font-family: "Geometria-Bold";
+}
+.back_call textarea{
+    resize: none;
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1660px) {
@@ -686,6 +775,12 @@ footer .btn-header{
 .slider h1{
     font-size: 24px;
 }
+    .slider_product .angle_left, .center_slider .angle_left {
+        left: 0%;
+    }
+    .slider_product .angle_right, .center_slider .angle_right {
+        right: 0%;
+    }
 }
 @media only screen and (max-width : 1574px) {
     .fly_scroll .row > .col-lg-3 .scroll_call{
@@ -901,11 +996,7 @@ header .container .row > .col-lg-3{
         align-items: center;
     }
 
-    .close {
-        font-size: 2.5rem;
-        opacity: 1;
-        padding-bottom: 9px!important;
-    }
+
     .modal-body .navbar-nav .nav-link{
         padding-left: 0!important;
         color: #000;
@@ -936,10 +1027,21 @@ header .container .row > .col-lg-3{
         text-align: center;
         margin-bottom: 4px;
     }
+	/*modal*/
+	.modal.fade.show{
+		padding-right: 0!important;
+	}
+	.modal.show .modal-dialog{
+		max-width: 100%;
+		margin: 0;
+	}
+	.modal-content{
+		height: 100vh;
 
+	}
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 511px) {
+@media only screen and (max-width : 767px) {
 
 }

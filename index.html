@@ -54,7 +54,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 d-flex align-items-center"><a class="link_top" href="#">Партнерская программа</a></div>
+            <div class="col-lg-2 d-flex align-items-center"><a class="btn btn-header affiliate_program" data-toggle="modal" data-target="#back_call">Партнерская программа</a></div>
             <div class="col-lg-3 d-flex align-items-center"><p>Пн-Пт: 9:00-17:00, Сб: 9:00-15:00, Вс: выходной</p></div>
             <div class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-center justify-content-lg-end"><a class="tel" href="tel:+6494461709">+7
                 (861) 239-69-83</a></div>
@@ -62,7 +62,7 @@
                 <div class="row">
                     <div class="col-lg-6 d-flex align-items-center justify-content-center"><a class="tel" href="tel:+6494461709">+7 (989)
                         289-69-83</a></div>
-                    <div class="col-lg-6 d-flex align-items-center"><a class="btn btn-header" href="#" role="button">Заказать
+                    <div class="col-lg-6 d-flex align-items-center"><a class="btn btn-header" data-toggle="modal" data-target="#back_call">Заказать
                         звонок</a></div>
                 </div>
             </div>
@@ -98,12 +98,12 @@
                     <p class="catalog_opdata"><a href="">Каталог</a> обновлен 03.10.18 17:31:29 Msk</p>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-6 d-flex align-items-center justify-content-end icons_head pl-0">
-                    <div class="d-flex block_icon reg_icon">
-                        <a class="d-flex" href="">
+                    <div class="d-flex block_icon reg_icon" data-toggle="modal" data-target="#regModal" type="button">
+
 					<span class="icon_head pl-3 pr-3 d-flex align-items-center lnr lnr-user">
 						
 					</span>
-                        </a>
+
                         <div class="pading_registration">
                             <div class="registration">
                                 <div class="row mr-0 ml-0 pb-3 reg_log">
@@ -775,7 +775,7 @@
                 </div>
             </div>
             <div class="col-lg-3">
-                <a class="btn btn-header mb-4" href="#" role="button">Написать директору</a>
+                <a class="btn btn-header mb-4" href="#" data-toggle="modal" data-target="#director_letter">Написать директору</a>
                 <p>© «Виват» — Швейная фурнитура, товары для рукоделия и творчества оптом, 2018г </p>
             </div>
             <div class="col-lg-2 offset-lg-1 contacts_footer ">
@@ -806,12 +806,12 @@
             <div class="modal-header">
                 <div class="btn-group">
                     <div class="dropdown">
-                        <a class="btn dropdown-toggle cities" href="#" role="button" id="dropdownMenuLink"
+                        <a class="btn dropdown-toggle cities" href="#" role="button" id="dropdownMenuLink2"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Краснодар
                         </a>
 
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
                             <p class="list_city">Выбрать город:</p>
                             <div class="search_form">
                                 <input type="text" class="form-control search" id="1" placeholder="Поиск города">
@@ -855,7 +855,192 @@
         </div>
     </div>
 </div>
+<!-- Modal reg -->
+<div class="modal fade modal_reg" id="regModal" tabindex="-1" role="dialog" aria-labelledby="regModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Войти</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Регистрация</a>
+                    </li>
+                </ul>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <form class="d-flex justify-content-center" action="">
+                            <div class="flex-column col-9">
+                                <label for="email">E-mail/Телефон</label>
+                                <input type="text" class="form-control search" id="email" placeholder="Введите адрес электронной почты">
+                                <label for="email">Пароль</label>
+                                <input type="password" class="form-control search pasword" id="pasword" placeholder="Введите пароль">
+                                <div class="check_save_me">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Запомнить меня на этом устройстве
+                                    </label>
+                                </div>
+                                <div class="login">
+                                <a class="btn btn-header" href="#" role="button">Войти</a>
+                                </div>
+                                <div class="forgot_password">
+                                <a class="link_top" href="#">Забыли пароль?</a>
+                                 </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <form class="d-flex justify-content-center" action="">
+                            <div class="col-11">
+                                <div class="row">
+                                    <div class="col-5 name_input d-flex align-items-center">
+                                        <p>Фамилия*</p>
+                                    </div>
+                                    <div class="col-7 field_for_registration">
+                                        <input type="text" class="form-control search" id="surname">
+                                    </div>
+                                    <div class="col-5 name_input d-flex align-items-center">
+                                        <p>Имя*</p>
+                                    </div>
+                                    <div class="col-7 field_for_registration">
+                                        <input type="text" class="form-control search" id="name">
+                                    </div>
+                                    <div class="col-5 name_input d-flex align-items-center">
+                                        <p>Отчество*</p>
+                                    </div>
+                                    <div class="col-7 field_for_registration">
+                                        <input type="text" class="form-control search" id="patronymic
+">
+                                    </div>
+                                    <div class="col-5 name_input d-flex align-items-center">
+                                        <p>Пароль*</p>
+                                    </div>
+                                    <div class="col-7 field_for_registration">
+                                        <input type="text" class="form-control search" id="password">
+                                    </div>
+                                    <div class="col-5 name_input d-flex align-items-center">
+                                        <p>Подтвердите пароль*</p>
+                                    </div>
+                                    <div class="col-7 field_for_registration">
+                                        <input type="text" class="form-control search" id="password_repeat">
+                                    </div>
+                                    <div class="col-5 name_input d-flex align-items-center">
+                                        <p>Город*</p>
+                                    </div>
+                                    <div class="col-7 field_for_registration">
+                                        <input type="text" class="form-control search" id="city">
+                                    </div>
+                                    <div class="col-5 name_input d-flex align-items-center">
+                                        <p>E-mail*</p>
+                                    </div>
+                                    <div class="col-7 field_for_registration">
+                                        <input type="text" class="form-control search" id="mail">
+                                    </div>
+                                    <div class="col-5 name_input d-flex align-items-center">
+                                        <p>Телефон*</p>
+                                    </div>
+                                    <div class="col-7 field_for_registration">
+                                        <input type="text" class="form-control search" id="phone">
+                                    </div>
+                                    <div class="col-5 name_input d-flex align-items-center">
+                                        <p>ИНН (если есть)</p>
+                                    </div>
+                                    <div class="col-7 field_for_registration">
+                                        <input type="text" class="form-control search" id="inn">
+                                    </div>
+                                    <div class="col-5 name_input d-flex align-items-center">
+                                        <p>*Обязательные поля</p>
+                                    </div>
+                                    <div class="col-7 field_for_registration">
+                                        <a class="btn btn-header" href="#" role="button">Зарегистрироваться</a>
+                                    </div>
+                                    <div class="col-12 little_font mt-3">
+                                        <p>Нажимая кнопку «Зарегистрироваться», я принимаю политику конфиденциальности и даю свое согласие на обработку персональных данных</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
 
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Modal back_call -->
+<div class="modal fade modal_reg back_call" id="back_call" tabindex="-1" role="dialog" aria-labelledby="back_call" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5>Заказать звонок</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                        <form class="d-flex justify-content-center" action="">
+                            <div class="flex-column col-9">
+                                <label for="back_name">Имя</label>
+                                <input type="text" class="form-control search" id="back_name" placeholder="Как к вам обращаться">
+                                <label for="back_phone">Телефон</label>
+                                <input type="text" class="form-control search pasword" id="back_phone" placeholder="Ваш номер телефона">
+
+                                <div class="login">
+                                    <a class="btn btn-header" href="#" role="button">Заказать звонок</a>
+                                </div>
+                                <div class="forgot_password">
+                                    <a class="link_top" href="#">Забыли пароль?</a>
+                                </div>
+                            </div>
+                        </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Modal director_letter -->
+<div class="modal fade modal_reg back_call" id="director_letter" tabindex="-1" role="dialog" aria-labelledby="director_letter" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5>Заказать звонок</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="d-flex justify-content-center" action="">
+                    <div class="flex-column col-9">
+                        <label for="director_name">Имя</label>
+                        <input type="text" class="form-control search" id="director_name" placeholder="Как к вам обращаться">
+                        <label for="director_phone">Телефон</label>
+                        <input type="text" class="form-control search pasword" id="director_phone" placeholder="Ваш номер телефона">
+                        <label for="director_email">E-mail</label>
+                        <input type="text" class="form-control search pasword" id="director_email" placeholder="Ваш E-mail">
+                        <label for="director_email">Опишите проблему</label>
+                        <textarea class="form-control search pasword" name="" id="" cols="30" rows="4" placeholder="Опишите проблему"></textarea>
+                        <div class="login">
+                            <a class="btn btn-header" href="#" role="button">Заказать звонок</a>
+                        </div>
+                        <div class="forgot_password">
+                            <a class="link_top" href="#">Забыли пароль?</a>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
