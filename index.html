@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Виват</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- slick slider -->
+    <link href="slick/slick.css" rel="stylesheet">
+    <link href="slick/slick-theme.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="css/font-awesome/css/fontawesome-all.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]>
+    <script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header class="d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 d-flex align-items-center">
+                <div class="btn-group">
+                    <div class="dropdown">
+                        <a class="btn dropdown-toggle cities" href="#" role="button" id="dropdownMenuLink"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Краснодар
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <p class="list_city">Выбрать город:</p>
+                            <div class="search_form">
+                                <input type="text" class="form-control search" id="1" placeholder="Поиск города">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <p class="about_city">Выберите город из списка, или начните вводить название.</p>
+                            <a class="dropdown-item" href="#"><span>Москва</span></a>
+                            <a class="dropdown-item" href="#"><span>Санкт-Петербург</span></a>
+                            <a class="dropdown-item" href="#"><span>Краснодар</span></a>
+                            <a class="dropdown-item" href="#"><span>Воронеж</span></a>
+                            <a class="dropdown-item" href="#"><span>Казань</span></a>
+                            <a class="dropdown-item" href="#"><span>Ростов-на-Дону</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 d-flex align-items-center"><a class="link_top" href="#">Партнерская программа</a></div>
+            <div class="col-lg-3 d-flex align-items-center"><p>Пн-Пт: 9:00-17:00, Сб: 9:00-15:00, Вс: выходной</p></div>
+            <div class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-center justify-content-lg-end"><a class="tel" href="tel:+6494461709">+7
+                (861) 239-69-83</a></div>
+            <div class="col-lg-3 col-sm-6 col-6">
+                <div class="row">
+                    <div class="col-lg-6 d-flex align-items-center justify-content-center"><a class="tel" href="tel:+6494461709">+7 (989)
+                        289-69-83</a></div>
+                    <div class="col-lg-6 d-flex align-items-center"><a class="btn btn-header" href="#" role="button">Заказать
+                        звонок</a></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</header>
+<section class="head d-flex align-items-center">
+    <div class="fly_scroll default fade_script">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 col-6">
+                    <div class="row">
+                        <div class="col-lg-6 d-flex flex-row">
+                            <button type="button" class="navbar-viva" data-toggle="modal" data-target="#exampleModal">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <img src="img/Logo.png" alt="vivat">
+                        </div>
+                        <div class="col-lg-6 d-flex align-items-center scroll_call">
+                            <p class="mb-0">Доставляем товары по всей России</p>
+                            <a class="tel" href="tel:+6494461709">+7 (861) 239-69-83</a>
+                            <a class="tel" href="tel:+6494461709">+7 (989) 289-69-83</a>
+                            <a href="" class="call">Заказать Звонок</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center">
+                    <input type="text" class="form-control search" id="2" placeholder="Поиск по каталогу">
+                    <i class="fas fa-search"></i>
+                    <p class="catalog_opdata"><a href="">Каталог</a> обновлен 03.10.18 17:31:29 Msk</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-6 d-flex align-items-center justify-content-end icons_head pl-0">
+                    <div class="d-flex block_icon reg_icon">
+                        <a class="d-flex" href="">
+					<span class="icon_head pl-3 pr-3 d-flex align-items-center lnr lnr-user">
+						
+					</span>
+                        </a>
+                        <div class="pading_registration">
+                            <div class="registration">
+                                <div class="row mr-0 ml-0 pb-3 reg_log">
+                                    <a class="btn btn-header" href="#" role="button">Войти</a>
+                                    <a class="reg_link" href="">Зарегистрироваться</a>
+                                </div>
+                                <ul class="pl-0 pt-3">
+                                    <li><a href="">Мой профиль</a></li>
+                                    <li><a href="">Мои заказы</a></li>
+                                    <li><a href="">Моя скидка</a></li>
+                                    <li><a href="">Выйти</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex block_icon">
+                        <a class="d-flex" href=""><span
+                                class="icon_head pl-3 pr-3 d-flex align-items-center lnr lnr-history"></span></a>
+                    </div>
+                    <div class="d-flex block_icon">
+                        <a class="d-flex" href=""><span
+                                class="icon_head pl-3 pr-3 d-flex align-items-center lnr lnr-heart"></span></a>
+                    </div>
+                    <div class="d-flex block_icon">
+                        <a class="d-flex" href=""><span
+                                class="icon_head pl-3 pr-3 d-flex align-items-center lnr lnr-cart"><i><span>3</span></i></span></a>
+                    </div>
+                    <div class="d-flex block_icon">
+                        <a class="d-flex icon_head align-items-center price_bask pl-2"
+                            href="">133 600 <span> Руб.</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="menu d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 viva-menu">
+                <div class="row align-items-center pl-3 header navBurger">
+                    <button type="button" class="navbar-viva" >
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <p class="mb-0">Каталог товаров</p>
+                </div>
+
+            </div>
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item d-flex align-items-center active">
+                                <a class="nav-link" href="#">О компании</a>
+                            </li>
+                            <li class="nav-item d-flex align-items-center">
+                                <a class="nav-link" href="#">Доставка</a>
+                            </li>
+                            <li class="nav-item d-flex align-items-center">
+                                <a class="nav-link" href="#">Скидки</a>
+                            </li>
+                            <li class="nav-item d-flex align-items-center">
+                                <a class="nav-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="slider">
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-lg-3 viva-menu viva-menu-container">
+                <div class="row">
+                    <div class="col-12"><input type="text" class="form-control search" id="2" placeholder="Поиск по каталогу"></div>
+                    <ul class="list pl-3 pr-3">
+                        <li class="item_menu pb-3"><a href="">Швейная фурнитура <span>(11166)</span></a></li>
+                        <li class="item_menu pb-3"><a href="">Оборудование и инструменты для шитья и рукодиелия <span>(1059)</span></a>
+                        </li>
+                        <li class="item_menu pb-3"><a href="">Творчество <span>(11942)</span></a></li>
+                        <li class="item_menu pb-3"><a href="">Бижутерия, аксессуары и галатерея <span>(1785)</span></a>
+                        </li>
+                        <li class="item_menu pb-3"><a href="">Разное <span>(4743)</span></a></li>
+                    </ul>
+                </div>
+                <div class="row flex-column d-flex align-items-center banner pt-3">
+                    <img src="img/fg-logo.png" alt="">
+                    <p>Краснодарский диллерский центр</p>
+                </div>
+            </div>
+            <div class="col-lg-9 slider-conteiner">
+                <h1 class="pt-3 pb-3 mb-0">Швейная фурнитура, товары для рукоделия и творчества оптом и в розницу</h1>
+                <div class="slider_baner">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-lg-7 col-7 d-flex justify-content-center flex-column text_slide">
+                                <h2 class="pb-3">Шелковые нитки DOLI и SHANFA</h2>
+                                <p>для вышивания и создания кистей<br> для украшений</p>
+                                <a class="btn btn-header mt-5" href="#" role="button">Узнать больше</a>
+                            </div>
+                            <div class="col-lg-5 col-5"
+                                 style="background: url(img/nitki.png) no-repeat center;background-size: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-lg-7 col-7 d-flex justify-content-center flex-column text_slide">
+                                <h2 class="pb-3">Шелковые нитки DOLI и SHANFA</h2>
+                                <p>для вышивания и создания кистей<br> для украшений</p>
+                                <a class="btn btn-header mt-5" href="#" role="button">Узнать больше</a>
+                            </div>
+                            <div class="col-lg-5 col-5"
+                                 style="background: url(img/nitki.png) no-repeat center;background-size: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-lg-7 col-7 d-flex justify-content-center flex-column text_slide">
+                                <h2 class="pb-3">Шелковые нитки DOLI и SHANFA</h2>
+                                <p>для вышивания и создания кистей<br> для украшений</p>
+                                <a class="btn btn-header mt-5" href="#" role="button">Узнать больше</a>
+                            </div>
+                            <div class="col-lg-5 col-5"
+                                 style="background: url(img/nitki.png) no-repeat center;background-size: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="new_receipts viva_products">
+    <div class="container">
+        <div class="row flex-column">
+            <h2>Новые поступления</h2>
+            <div class="slider_product row">
+                <div class="slider_item col-lg-3">
+                    <div class="col-lg-12 p-4 bg_item">
+                        <div class="img_product"
+                             style="padding-top: 100%;background: url(img/img.png) no-repeat center;background-size: contain;"></div>
+                        <div class="block_info">
+                            <a href="" class="name_product">Кольцо для ключей 29*2,5мм арт.2024-2 никель</a>
+                            <p class="price mb-0">40 Руб. </p>
+                            <p class="old_price">40 Руб. </p>
+                            <div class="col-12">
+                                <div class="row d-flex justify-content-between">
+                                    <a class="btn btn-header more d-flex align-items-center" href="#" role="button">Подробнее</a>
+                                    <a class="btn btn-header like" href="#" role="button"><span
+                                            class="icon_head lnr lnr-heart"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_item col-lg-3">
+                    <div class="col-lg-12 p-4 bg_item">
+                        <div class="img_product"
+                             style="padding-top: 100%;background: url(img/img.png) no-repeat center;background-size: contain;"></div>
+                        <div class="block_info">
+                            <a href="" class="name_product">Кольцо для ключей 29*2,5мм арт.2024-2 никель</a>
+                            <p class="price mb-0">40 Руб. </p>
+                            <p class="old_price">40 Руб. </p>
+                            <div class="col-12">
+                                <div class="row d-flex justify-content-between">
+                                    <a class="btn btn-header more d-flex align-items-center" href="#" role="button">Подробнее</a>
+                                    <a class="btn btn-header like" href="#" role="button"><span
+                                            class="icon_head lnr lnr-heart"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_item col-lg-3">
+                    <div class="col-lg-12 p-4 bg_item">
+                        <div class="img_product"
+                             style="padding-top: 100%;background: url(img/img.png) no-repeat center;background-size: contain;"></div>
+                        <div class="block_info">
+                            <a href="" class="name_product">Кольцо для ключей 29*2,5мм арт.2024-2 никель</a>
+                            <p class="price mb-0">40 Руб. </p>
+                            <p class="old_price">40 Руб. </p>
+                            <div class="col-12">
+                                <div class="row d-flex justify-content-between">
+                                    <a class="btn btn-header more d-flex align-items-center" href="#" role="button">Подробнее</a>
+                                    <a class="btn btn-header like" href="#" role="button"><span
+                                            class="icon_head lnr lnr-heart"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_item col-lg-3">
+                    <div class="col-lg-12 p-4 bg_item">
+                        <div class="img_product"
+                             style="padding-top: 100%;background: url(img/img.png) no-repeat center;background-size: contain;"></div>
+                        <div class="block_info">
+                            <a href="" class="name_product">Кольцо для ключей 29*2,5мм арт.2024-2 никель</a>
+                            <p class="price mb-0">40 Руб. </p>
+                            <p class="old_price">40 Руб. </p>
+                            <div class="col-12">
+                                <div class="row d-flex justify-content-between">
+                                    <a class="btn btn-header more d-flex align-items-center" href="#" role="button">Подробнее</a>
+                                    <a class="btn btn-header like" href="#" role="button"><span
+                                            class="icon_head lnr lnr-heart"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_item col-lg-3">
+                    <div class="col-lg-12 p-4 bg_item">
+                        <div class="img_product"
+                             style="padding-top: 100%;background: url(img/img.png) no-repeat center;background-size: contain;"></div>
+                        <div class="block_info">
+                            <a href="" class="name_product">Кольцо для ключей 29*2,5мм арт.2024-2 никель</a>
+                            <p class="price mb-0">40 Руб. </p>
+                            <p class="old_price">40 Руб. </p>
+                            <div class="col-12">
+                                <div class="row d-flex justify-content-between">
+                                    <a class="btn btn-header more d-flex align-items-center" href="#" role="button">Подробнее</a>
+                                    <a class="btn btn-header like" href="#" role="button"><span
+                                            class="icon_head lnr lnr-heart"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="new_receipts viva_products">
+    <div class="container">
+        <div class="row flex-column">
+            <h2>Снижение цены</h2>
+            <div class="slider_product row">
+                <div class="slider_item col-lg-3">
+                    <div class="col-lg-12 p-4 bg_item">
+                        <div class="img_product"
+                             style="padding-top: 100%;background: url(img/img.png) no-repeat center;background-size: contain;"></div>
+                        <div class="block_info">
+                            <a href="" class="name_product">Кольцо для ключей 29*2,5мм арт.2024-2 никель</a>
+                            <p class="price mb-0">40 Руб. </p>
+                            <p class="old_price">40 Руб. </p>
+                            <div class="col-12">
+                                <div class="row d-flex justify-content-between">
+                                    <a class="btn btn-header more d-flex align-items-center" href="#" role="button">Подробнее</a>
+                                    <a class="btn btn-header like" href="#" role="button"><span
+                                            class="icon_head lnr lnr-heart"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_item col-lg-3">
+                    <div class="col-lg-12 p-4 bg_item">
+                        <div class="img_product"
+                             style="padding-top: 100%;background: url(img/img.png) no-repeat center;background-size: contain;"></div>
+                        <div class="block_info">
+                            <a href="" class="name_product">Кольцо для ключей 29*2,5мм арт.2024-2 никель</a>
+                            <p class="price mb-0">40 Руб. </p>
+                            <p class="old_price">40 Руб. </p>
+                            <div class="col-12">
+                                <div class="row d-flex justify-content-between">
+                                    <a class="btn btn-header more d-flex align-items-center" href="#" role="button">Подробнее</a>
+                                    <a class="btn btn-header like" href="#" role="button"><span
+                                            class="icon_head lnr lnr-heart"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_item col-lg-3">
+                    <div class="col-lg-12 p-4 bg_item">
+                        <div class="img_product"
+                             style="padding-top: 100%;background: url(img/img.png) no-repeat center;background-size: contain;"></div>
+                        <div class="block_info">
+                            <a href="" class="name_product">Кольцо для ключей 29*2,5мм арт.2024-2 никель</a>
+                            <p class="price mb-0">40 Руб. </p>
+                            <p class="old_price">40 Руб. </p>
+                            <div class="col-12">
+                                <div class="row d-flex justify-content-between">
+                                    <a class="btn btn-header more d-flex align-items-center" href="#" role="button">Подробнее</a>
+                                    <a class="btn btn-header like" href="#" role="button"><span
+                                            class="icon_head lnr lnr-heart"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_item col-lg-3">
+                    <div class="col-lg-12 p-4 bg_item">
+                        <div class="img_product"
+                             style="padding-top: 100%;background: url(img/img.png) no-repeat center;background-size: contain;"></div>
+                        <div class="block_info">
+                            <a href="" class="name_product">Кольцо для ключей 29*2,5мм арт.2024-2 никель</a>
+                            <p class="price mb-0">40 Руб. </p>
+                            <p class="old_price">40 Руб. </p>
+                            <div class="col-12">
+                                <div class="row d-flex justify-content-between">
+                                    <a class="btn btn-header more d-flex align-items-center" href="#" role="button">Подробнее</a>
+                                    <a class="btn btn-header like" href="#" role="button"><span
+                                            class="icon_head lnr lnr-heart"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_item col-lg-3">
+                    <div class="col-lg-12 p-4 bg_item">
+                        <div class="img_product"
+                             style="padding-top: 100%;background: url(img/img.png) no-repeat center;background-size: contain;"></div>
+                        <div class="block_info">
+                            <a href="" class="name_product">Кольцо для ключей 29*2,5мм арт.2024-2 никель</a>
+                            <p class="price mb-0">40 Руб. </p>
+                            <p class="old_price">40 Руб. </p>
+                            <div class="col-12">
+                                <div class="row d-flex justify-content-between">
+                                    <a class="btn btn-header more d-flex align-items-center" href="#" role="button">Подробнее</a>
+                                    <a class="btn btn-header like" href="#" role="button"><span
+                                            class="icon_head lnr lnr-heart"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="new_receipts viva_products">
+    <div class="container">
+        <div class="row flex-column">
+            <h2>Акция</h2>
+            <div class="slider_product row">
+                <div class="slider_item col-lg-3">
+                    <div class="col-lg-12 p-4 bg_item">
+                        <div class="img_product"
+                             style="padding-top: 100%;background: url(img/img.png) no-repeat center;background-size: contain;"></div>
+                        <div class="block_info">
+                            <a href="" class="name_product">Кольцо для ключей 29*2,5мм арт.2024-2 никель</a>
+                            <p class="price mb-0">40 Руб. </p>
+                            <p class="old_price">40 Руб. </p>
+                            <div class="col-12">
+                                <div class="row d-flex justify-content-between">
+                                    <a class="btn btn-header more d-flex align-items-center" href="#" role="button">Подробнее</a>
+                                    <a class="btn btn-header like" href="#" role="button"><span
+                                            class="icon_head lnr lnr-heart"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_item col-lg-3">
+                    <div class="col-lg-12 p-4 bg_item">
+                        <div class="img_product"
+                             style="padding-top: 100%;background: url(img/img.png) no-repeat center;background-size: contain;"></div>
+                        <div class="block_info">
+                            <a href="" class="name_product">Кольцо для ключей 29*2,5мм арт.2024-2 никель</a>
+                            <p class="price mb-0">40 Руб. </p>
+                            <p class="old_price">40 Руб. </p>
+                            <div class="col-12">
+                                <div class="row d-flex justify-content-between">
+                                    <a class="btn btn-header more d-flex align-items-center" href="#" role="button">Подробнее</a>
+                                    <a class="btn btn-header like" href="#" role="button"><span
+                                            class="icon_head lnr lnr-heart"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_item col-lg-3">
+                    <div class="col-lg-12 p-4 bg_item">
+                        <div class="img_product"
+                             style="padding-top: 100%;background: url(img/img.png) no-repeat center;background-size: contain;"></div>
+                        <div class="block_info">
+                            <a href="" class="name_product">Кольцо для ключей 29*2,5мм арт.2024-2 никель</a>
+                            <p class="price mb-0">40 Руб. </p>
+                            <p class="old_price">40 Руб. </p>
+                            <div class="col-12">
+                                <div class="row d-flex justify-content-between">
+                                    <a class="btn btn-header more d-flex align-items-center" href="#" role="button">Подробнее</a>
+                                    <a class="btn btn-header like" href="#" role="button"><span
+                                            class="icon_head lnr lnr-heart"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_item col-lg-3">
+                    <div class="col-lg-12 p-4 bg_item">
+                        <div class="img_product"
+                             style="padding-top: 100%;background: url(img/img.png) no-repeat center;background-size: contain;"></div>
+                        <div class="block_info">
+                            <a href="" class="name_product">Кольцо для ключей 29*2,5мм арт.2024-2 никель</a>
+                            <p class="price mb-0">40 Руб. </p>
+                            <p class="old_price">40 Руб. </p>
+                            <div class="col-12">
+                                <div class="row d-flex justify-content-between">
+                                    <a class="btn btn-header more d-flex align-items-center" href="#" role="button">Подробнее</a>
+                                    <a class="btn btn-header like" href="#" role="button"><span
+                                            class="icon_head lnr lnr-heart"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_item col-lg-3">
+                    <div class="col-lg-12 p-4 bg_item">
+                        <div class="img_product"
+                             style="padding-top: 100%;background: url(img/img.png) no-repeat center;background-size: contain;"></div>
+                        <div class="block_info">
+                            <a href="" class="name_product">Кольцо для ключей 29*2,5мм арт.2024-2 никель</a>
+                            <p class="price mb-0">40 Руб. </p>
+                            <p class="old_price">40 Руб. </p>
+                            <div class="col-12">
+                                <div class="row d-flex justify-content-between">
+                                    <a class="btn btn-header more d-flex align-items-center" href="#" role="button">Подробнее</a>
+                                    <a class="btn btn-header like" href="#" role="button"><span
+                                            class="icon_head lnr lnr-heart"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="new_receipts viva_products">
+    <div class="container">
+        <div class="row flex-column">
+            <h2>Распродажа</h2>
+            <div class="slider_product row">
+                <div class="slider_item col-lg-3">
+                    <div class="col-lg-12 p-4 bg_item">
+                        <div class="img_product"
+                             style="padding-top: 100%;background: url(img/img.png) no-repeat center;background-size: contain;"></div>
+                        <div class="block_info">
+                            <a href="" class="name_product">Кольцо для ключей 29*2,5мм арт.2024-2 никель</a>
+                            <p class="price mb-0">40 Руб. </p>
+                            <p class="old_price">40 Руб. </p>
+                            <div class="col-12">
+                                <div class="row d-flex justify-content-between">
+                                    <a class="btn btn-header more d-flex align-items-center" href="#" role="button">Подробнее</a>
+                                    <a class="btn btn-header like" href="#" role="button"><span
+                                            class="icon_head lnr lnr-heart"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_item col-lg-3">
+                    <div class="col-lg-12 p-4 bg_item">
+                        <div class="img_product"
+                             style="padding-top: 100%;background: url(img/img.png) no-repeat center;background-size: contain;"></div>
+                        <div class="block_info">
+                            <a href="" class="name_product">Кольцо для ключей 29*2,5мм арт.2024-2 никель</a>
+                            <p class="price mb-0">40 Руб. </p>
+                            <p class="old_price">40 Руб. </p>
+                            <div class="col-12">
+                                <div class="row d-flex justify-content-between">
+                                    <a class="btn btn-header more d-flex align-items-center" href="#" role="button">Подробнее</a>
+                                    <a class="btn btn-header like" href="#" role="button"><span
+                                            class="icon_head lnr lnr-heart"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_item col-lg-3">
+                    <div class="col-lg-12 p-4 bg_item">
+                        <div class="img_product"
+                             style="padding-top: 100%;background: url(img/img.png) no-repeat center;background-size: contain;"></div>
+                        <div class="block_info">
+                            <a href="" class="name_product">Кольцо для ключей 29*2,5мм арт.2024-2 никель</a>
+                            <p class="price mb-0">40 Руб. </p>
+                            <p class="old_price">40 Руб. </p>
+                            <div class="col-12">
+                                <div class="row d-flex justify-content-between">
+                                    <a class="btn btn-header more d-flex align-items-center" href="#" role="button">Подробнее</a>
+                                    <a class="btn btn-header like" href="#" role="button"><span
+                                            class="icon_head lnr lnr-heart"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_item col-lg-3">
+                    <div class="col-lg-12 p-4 bg_item">
+                        <div class="img_product"
+                             style="padding-top: 100%;background: url(img/img.png) no-repeat center;background-size: contain;"></div>
+                        <div class="block_info">
+                            <a href="" class="name_product">Кольцо для ключей 29*2,5мм арт.2024-2 никель</a>
+                            <p class="price mb-0">40 Руб. </p>
+                            <p class="old_price">40 Руб. </p>
+                            <div class="col-12">
+                                <div class="row d-flex justify-content-between">
+                                    <a class="btn btn-header more d-flex align-items-center" href="#" role="button">Подробнее</a>
+                                    <a class="btn btn-header like" href="#" role="button"><span
+                                            class="icon_head lnr lnr-heart"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_item col-lg-3">
+                    <div class="col-lg-12 p-4 bg_item">
+                        <div class="img_product"
+                             style="padding-top: 100%;background: url(img/img.png) no-repeat center;background-size: contain;"></div>
+                        <div class="block_info">
+                            <a href="" class="name_product">Кольцо для ключей 29*2,5мм арт.2024-2 никель</a>
+                            <p class="price mb-0">40 Руб. </p>
+                            <p class="old_price">40 Руб. </p>
+                            <div class="col-12">
+                                <div class="row d-flex justify-content-between">
+                                    <a class="btn btn-header more d-flex align-items-center" href="#" role="button">Подробнее</a>
+                                    <a class="btn btn-header like" href="#" role="button"><span
+                                            class="icon_head lnr lnr-heart"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="center_menu d-flex align-items-center mt-5 mb-5">
+    <div class="container">
+        <div class="row justify-content-between center_slider">
+            <div class="slide_for_slider">
+                <div class="item_center_menu">
+                    <div class="images_center_slider"
+                         style="background: url(img/furniture.png) no-repeat center;background-size:contain"></div>
+                    <a href=""><p class="mb-1 ml-3">Швейная фурнитура</p></a>
+                </div>
+            </div>
+            <div class="slide_for_slider">
+                <div class="item_center_menu">
+                    <div class="images_center_slider"
+                         style="background: url(img/2.png) no-repeat center;background-size:contain"></div>
+                    <a href=""><p class="mb-1 ml-3">Швейная фурнитура</p></a>
+                </div>
+            </div>
+            <div class="slide_for_slider">
+                <div class="item_center_menu">
+                    <div class="images_center_slider"
+                         style="background: url(img/paint.png) no-repeat center;background-size:contain"></div>
+                    <a href=""><p class="mb-1 ml-3">Швейная фурнитура</p></a>
+                </div>
+            </div>
+            <div class="slide_for_slider">
+                <div class="item_center_menu">
+                    <div class="images_center_slider"
+                         style="background: url(img/4.png) no-repeat center;background-size:contain"></div>
+                    <a href=""><p class="mb-1 ml-3">Швейная фурнитура</p></a>
+                </div>
+            </div>
+            <div class="slide_for_slider">
+                <div class="item_center_menu">
+                    <div class="images_center_slider"
+                         style="background: url(img/5.png) no-repeat center;background-size:contain"></div>
+                    <a href=""><p class="mb-1 ml-3">Швейная фурнитура</p></a>
+                </div>
+            </div>
+            <div class="slide_for_slider">
+                <div class="item_center_menu">
+                    <div class="images_center_slider"
+                         style="background: url(img/2.png) no-repeat center;background-size:contain;"></div>
+                    <a href=""><p class="mb-1 ml-3">Швейная фурнитура</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="description_viva">
+    <div class="container">
+        <div class="row">
+            <h2>Швейная фурнирура, товары для шитья, вышивания, рукоделия и творчества</h2>
+            <p>Представляем вниманию швейный интернет маркет - магазин+склад - официальный сайт швейная фурнитура Виват
+                – Самый большой выбор швейной фурнитуры на Юге России.
+            </p>
+            <p>Купить швейную фурнитуру в розницу можно на любую сумму - минимальной суммы покупки нет. Задумываетесь
+                где купить швейную фурнитуру? Сайт шв ейной фурнитуры предлагает купить товары для рукоделия оптом
+                дёшево, удобная оплата, скидки, акции, распродажи, швейные принадлежности с доставкой по Всей России и
+                ЕАЭС, профессиональная помощь в подборе швейной фурнитуры.
+            </p>
+            <p>
+                Всё для портных, швей, розничных магазинов ткани и швейной фурнитуры, надомной работы, для тех кто
+                занимается различными видами рукоделия и творчества. Швейная фабрика, ателье, швейный цех, салон ремонта
+                одежды, мастерская по ремонту или изготовлению обуви, магазин творчества, ремонт мебели, швейное
+                производство – Швейный интернет магазин Виват поможет подобрать необходимое для успешного швейного
+                производства!
+            </p>
+            <p>Магазин рукоделия Виват, станет Вашим любимым местом покупок, швейное дело не оставит равнодушным ни
+                кого, ведь это целый мир швейной фурнитуры и дамское счастье для рукодельниц. Гамма швейной фурнитуры,
+                отличный ассортимент товаров для рукоделия, всё для шитья, приятные цены на товары для творчества.
+                Интернет магазин рукоделия ценит клиентов и старается, чтобы стоимость швейной фурнитуры соответствовала
+                пожеланиям заказчиков. Оптовый магазин швейной фурнитуры Виват – это низкие цены на швейную фурнитуру и
+                товары для рукоделия доступные каждому. Швейная фурнитура недорого — это реально!</p>
+            <p>Купить товары для рукоделия в розницу можно также приехав лично в наш магазин швейная фурнитура на
+                Шевченко. Адрес магазина швейной фурнитуры Виват указан в разделе «Контакты».</p>
+            <p>Если нужна швейная фурнитура оптом, интернет магазин Виват предлагает купить товары для шитья недорого,
+                даже если это всего лишь несколько наименований товаров. Необычная швейная фурнитура для шитья либо
+                ремонта бюстгальтера или купальника, для украшения вечернего или свадебного платья, для расшивания
+                одежды бальных танцев или для занятий восточным танцем, для декорирования концертных костюмов– сайт
+                швейная фурнитура Виват поможет подобрать необходимые швейные принадлежности.</p>
+            <p>Акция Георгиевская лента ежегодно собирает миллионы людей. Ищите где купить Георгиевскую ленту и ленту
+                Триколор дёшево? Виват швейная фурнитура организовала производство Георгиевской ленты. Фабрика
+                Георгиевской ленты наладила так же производство ленты триколор и ряда других лент. Ранее купить
+                Георгиевскую ленту оптом недорого покупатели могли на втором нашем сайте vivatkrasnodar.a5.ru . Теперь
+                Георгиевская лента от производителя по низкой цене представлена и на этом сайте vivatkrasnodar.com .
+                Если найдёте Георгиевскую ленту и ленту Триколор дешевле, то обязательно убедитесь в плотности
+                предлагаемой ленты. Завод Георгиевской ленты - это только качественная Георгиевская лента и лента
+                Триколор рулонами и в термонарезке разной длины.</p>
+            <p>В швейная фурнитура Краснодар Вы найдёте разнообразные товары швейной фурнитуры, так как это оптовая база
+                швейной фурнитуры, и позиционируется как склад швейной фурнитуры. Каталог швейной фурнитуры представляет
+                различные Виды рукоделия: ковроделие, работа со стеклом, набойка, нитяная графика, обработка кожи,
+                керамика, обработка металла, пирография, гобелен, полимерная глина, макраме, мыловарение, плетение,
+                батик, скрапбукинг, валяние, квиллинг, бисероплетение, декупаж, шитьё, вышивка, резьба, вязание,
+                рисование, флористика, декупаж, изготовление бижутерии, лоскутное шитьё - пэчворк, вышивание,
+                изготовление мягких игрушек и текстильных кукол, вязание, квилтинг, ганутель, кинусайга, гильоширование,
+                теримэн, роспись по дереву, выжигание по дереву, ошибана, икебана, витраж, свечи и свечеварение,
+                бисероплетение, вышивка лентами, алмазная вышивка, лепка, фелтинг, конзаши, топиарий, и прочие.</p>
+            <p>
+                В Швейная фурнитура Виват швейные аксессуары популярных марок, брэндов, производителей и поставщиков:
+                preciosa, clover, organ, zlatka, decola, dimensions, dmc, micron, prym, Panna, swarovski, Комфорт и К,
+                Гамма, Русская искусница, Кроше, Риолис, Матрёнин посад, Овен, Иглы Арти, Одеон, Советская звезда,
+                Комбинат Кирова, Красная лента, Протос, Швейная мануфактура, Гела, Золотое руно, Арго, Самшит, Лента,
+                Веллтекс, МАГ, Золотая нить, Ультратекс, Бэстекс, Мосфа, РТО, Русский фаворит, Калюбакинский игольный
+                завод, Стронг, и многих других</p>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 menu_footer">
+                <ul class="pl-0">
+                    <li class="pb-3"><a href="">Каталог</a></li>
+                    <li class="pb-3"><a href="">О компании</a></li>
+                    <li class="pb-3"><a href="">Доставка</a></li>
+                    <li class="pb-3"><a href="">Скидки</a></li>
+                    <li class="pb-3"><a href="">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 contacts_footer d-flex justify-content-center">
+                <div>
+                    <p class="mb-3">По любым вопросам:</p>
+                    <a class="tel" href="tel:+6494461709">+7 (861) 289-69-83</a>
+                    <a class="tel" href="tel:+6494461709">+7 (989) 289-69-83</a>
+                    <a class="mail" href="mailto:info@vivatkrasnodar.com">info@vivatkrasnodar.com</a>
+                    <p class="mb-2 mt-4">Мы находимся:</p>
+                    <p class="addres mb-0">г. Краснодар, ул. Шевченко, д.152/1</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <a class="btn btn-header mb-4" href="#" role="button">Написать директору</a>
+                <p>© «Виват» — Швейная фурнитура, товары для рукоделия и творчества оптом, 2018г </p>
+            </div>
+            <div class="col-lg-2 offset-lg-1 contacts_footer ">
+                <p>Мы в социальных сетях:</p>
+                <div class="row pb-3">
+                    <div class="icon_social col-4 col-sm-4 col-lg-3 d-flex justify-content-center"><a class=" d-flex justify-content-center align-items-center" href=""><i
+                            class="fab fa-vk"></i></a></div>
+                    <div class="icon_social col-4 col-sm-4 col-lg-3 d-flex justify-content-center"><a class=" d-flex justify-content-center align-items-center" href=""><i
+                            class="fab fa-instagram"></i></a></div>
+                    <div class="icon_social col-4 col-sm-4 col-lg-3 d-flex justify-content-center"><a class=" d-flex justify-content-center align-items-center" href=""><i
+                            class="fab fa-odnoklassniki"></i></a></div>
+                </div>
+                <p>Принимаем к оплате:</p>
+                <div class="flex-row d-flex">
+                    <div class="icon_pay col-6 col-sm-6 col-lg-4"
+                         style="background: url(img/visa.png) no-repeat;background-position: center;height: 33px;;"></div>
+                    <div class="icon_pay col-6 col-sm-6 col-lg-4"
+                         style="background: url(img/mc.png) no-repeat;background-position: center;height: 33px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="btn-group">
+                    <div class="dropdown">
+                        <a class="btn dropdown-toggle cities" href="#" role="button" id="dropdownMenuLink"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Краснодар
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <p class="list_city">Выбрать город:</p>
+                            <div class="search_form">
+                                <input type="text" class="form-control search" id="1" placeholder="Поиск города">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <p class="about_city">Выберите город из списка, или начните вводить название.</p>
+                            <a class="dropdown-item" href="#"><span>Москва</span></a>
+                            <a class="dropdown-item" href="#"><span>Санкт-Петербург</span></a>
+                            <a class="dropdown-item" href="#"><span>Краснодар</span></a>
+                            <a class="dropdown-item" href="#"><span>Воронеж</span></a>
+                            <a class="dropdown-item" href="#"><span>Казань</span></a>
+                            <a class="dropdown-item" href="#"><span>Ростов-на-Дону</span></a>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item d-flex align-items-center active">
+                        <a class="nav-link" href="#">О компании</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link" href="#">Доставка</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link" href="#">Скидки</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link" href="#">Контакты</a>
+                    </li>
+                </ul>
+                <div class="modal_footer">
+                    <a class="link_top" href="#">Партнерская программа</a>
+                    <p class="mt-3">Пн-Пт: 9:00-17:00, Сб: 9:00-15:00, Вс: выходной</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
